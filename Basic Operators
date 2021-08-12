@@ -6,3 +6,10 @@ val=`expr $b % $a`  #   % (Modulus)
 a = $b              #   = (Assignment)
 [ $a == $b ]        #   == (Equality)
 [ $a != $b ]        #   != (Not Equality)
+
+Relational Operations  [-eq, -ne, -gt, -lt, -ge, -le]  Ex: [ $a -eq $b ] 
+
+!      # inverts a true condition into false and vice versa   (NOT)
+-o     # one of the operands is true, then the condition becomes true  (OR)
+-a     # both the operands are true, then the condition becomes true otherwise false (AND)
+
