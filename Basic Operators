@@ -1,0 +1,8 @@
+val=`expr $a + $b`  #   + (Addition)
+val=`expr $a - $b`  #   - (Subtraction)
+val=`expr $a \* $b` #   * (Multiplication)	
+val=`expr $b / $a`  #   / (Division)
+val=`expr $b % $a`  #   % (Modulus)
+a = $b              #   = (Assignment)
+[ $a == $b ]        #   == (Equality)
+[ $a != $b ]        #   != (Not Equality)
