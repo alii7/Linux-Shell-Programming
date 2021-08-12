@@ -20,3 +20,20 @@ String Operators:
 -z      # if it is zero length, then it returns true  [ -z $a ]
 -n      # if it is nonzero length, then it returns true  [ -n $a ] 
 str     # if it is full, then it returns true
+
+File Test Operators:
+
+-b    # checks if file is a block special file; if yes, then the condition becomes true
+-c    # checks if file is a character special file; if yes, then the condition becomes true
+-d    # checks if file is a directory; if yes, then the condition becomes true
+-f    # checks if file is an ordinary file as opposed to a directory or special file; if yes, then the condition becomes true
+-g    # checks if file has its set group ID (SGID) bit set; if yes, then the condition becomes true
+-k    # checks if file has its sticky bit set; if yes, then the condition becomes true
+-p    # checks if file is a named pipe; if yes, then the condition becomes true
+-t    # checks if file descriptor is open and associated with a terminal; if yes, then the condition becomes true
+-u    # checks if file has its Set User ID (SUID) bit set; if yes, then the condition becomes true
+-r    # checks if file is readable; if yes, then the condition becomes true
+-w    # checks if file is writable; if yes, then the condition becomes true
+-x    # checks if file is executable; if yes, then the condition becomes true
+-s    # checks if file has size greater than 0; if yes, then condition becomes true
+-e    # checks if file exists; is true even if file is a directory but exists
