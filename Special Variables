@@ -9,3 +9,4 @@ $!     # process number of the last background command
 
 $* and $@ allow accessing all the command-line arguments at once unless they are enclosed in double quotes("")
 
+$?     # as a rule, most commands return an exit status of 0 if they were successful, and 1 if they were unsuccessful
