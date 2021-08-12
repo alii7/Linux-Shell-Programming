@@ -1,0 +1,6 @@
+The name of a variable can contain only letters (a to z or A to Z), numbers ( 0 to 9) or the underscore character ( _).
+By convention, Unix shell variables will have their names in UPPERCASE.
+variable_name=variable_value    # assign variable
+NAME="Zara Ali"  and   echo $NAME   # to access the value stored in a variable, prefix its name with the dollar sign ($)
+readonly NAME     # after a variable is marked read-only, its value cannot be changed
+unset variable_name     # once you unset a variable, you cannot access the stored value in the variable
