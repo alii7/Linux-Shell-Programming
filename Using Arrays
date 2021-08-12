@@ -1,0 +1,3 @@
+array_name=(value1 ... valuen)    # bash shell array initialization 
+{array_name[index]}               # to access array values
+{array_name[*]}  or  {array_name[@]}    # to access all the items in an array
