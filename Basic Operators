@@ -13,3 +13,10 @@ Relational Operations  [-eq, -ne, -gt, -lt, -ge, -le]  Ex: [ $a -eq $b ]
 -o     # one of the operands is true, then the condition becomes true  (OR)
 -a     # both the operands are true, then the condition becomes true otherwise false (AND)
 
+String Operators:
+
+=       # if values are equal then the condition becomes true
+!=      # if values are not equal then the condition becomes true
+-z      # if it is zero length, then it returns true  [ -z $a ]
+-n      # if it is nonzero length, then it returns true  [ -n $a ] 
+str     # if it is full, then it returns true
