@@ -1,0 +1,6 @@
+who > users                   # overwriting into file
+echo line 2 >> users          # to append the output in an existing file
+wc -l < users                 # it only knows that it is reading its input from standard input so it does not display file name
+
+
+
