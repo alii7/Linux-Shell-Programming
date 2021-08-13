@@ -1,0 +1,17 @@
+metacharacters have special meaning while using them in any Shell Script and causes termination of a word unless quoted
+
+Metacharacters :      * ? [ ] ' " \ $ ; & ( ) | ^ < > new-line space tab
+
+a character may be quoted by preceding it with a \
+
+echo Hello\; Word
+echo "I have \$1200"
+
+OTHER QUOTES : Single Quote, Double Quote, Back Quote
+
+echo '<-$1500.**>; (update?) [y|n]'    # there is an easy way to quote a large group of characters. Put a single quote (') at the beginning and at the end of the string 
+
+VAR=ZARA
+echo "$VAR owes <-\$1500.**>;          # if you want to substitute variable values, then you would need to put your commands in double quotes
+
+
