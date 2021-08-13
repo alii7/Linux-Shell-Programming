@@ -3,8 +3,9 @@ FRUIT="kiwi"                                          #
 case "$FRUIT" in                                      #
    "apple") echo "Apple pie is quite tasty."          #
    ;;                                                 #
-   "banana") echo "I like banana nut bread."          #
+   "banana") echo "I like banana nut bread."          #     CASE EXAMPLE  
    ;;                                                 #
    "kiwi") echo "New Zealand is famous for kiwi."     #
    ;;                                                 #
 esac                                                  #
+
