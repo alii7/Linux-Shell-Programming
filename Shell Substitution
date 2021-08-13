@@ -1,0 +1,7 @@
+echo -e "Value of a is $a \n"       # -e option enables the interpretation of backslash escapes
+
+ESCAPE SEQUENCES :  \\ backslash, \a alert, \b backspace, \c suppress trailing newline, \f form feed, \n new line, \r carriage return, \t horizontal tab, \v vertical tab
+
+Note: You can use the -E option to disable the interpretation of the backslash escapes (default)
+Note: You can use the -n option to disable the insertion of a new line
+
