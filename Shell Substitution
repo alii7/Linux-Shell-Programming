@@ -5,3 +5,16 @@ ESCAPE SEQUENCES :  \\ backslash, \a alert, \b backspace, \c suppress trailing n
 Note: You can use the -E option to disable the interpretation of the backslash escapes (default)
 Note: You can use the -n option to disable the insertion of a new line
 
+COMMAND SUBSTUTITION :
+
+When performing the command substitution make sure that you use the backquote, not the single quote character.
+
+DATE=`date`                                   #
+echo "Date is $DATE"                          #
+                                              #
+USERS=`who | wc -l`                           #     COMMAND SUBSTUTITION EXAMPLE
+echo "Logged in user are $USERS"              #
+                                              #
+UP=`date ; uptime`                            #
+echo "Uptime is $UP"                          #
+
