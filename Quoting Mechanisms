@@ -14,4 +14,5 @@ echo '<-$1500.**>; (update?) [y|n]'    # there is an easy way to quote a large g
 VAR=ZARA
 echo "$VAR owes <-\$1500.**>;          # if you want to substitute variable values, then you would need to put your commands in double quotes
 
+var=`command`                          # putting any Shell command in between backquotes executes the command
 
