@@ -24,3 +24,48 @@ Hello () {
 # Invoke your function
 Hello Zara Ali
 
+return code             # to return any value from your function
+
+# Define your function here
+Hello () {
+   echo "Hello World $1 $2"
+   return 10
+}
+
+# Invoke your function
+Hello Zara Ali
+
+# Capture value returnd by last command
+ret=$?
+
+echo "Return value is $ret"
+
+
+# Calling one function from another                            #
+number_one () {                                                #
+   echo "This is the first function speaking..."               #
+   number_two                                                  #
+}                                                              #
+                                                               #
+number_two () {                                                #      NESTED FUNCTION EXAMPLE
+   echo "This is now the second function speaking..."          #
+}                                                              #
+                                                               #
+# Calling function one.                                        #
+number_one                                                     #
+
+
+You can put definitions for commonly used functions inside your .profile. These definitions will be available whenever you log in and you can use them at the command prompt.
+
+Alternatively, you can group the definitions in a file, say test.sh, and then execute the file in the current shell by typing ""./test.sh""
+
+This has the effect of causing functions defined inside test.sh to be read and defined to the current shell as follows:
+
+$ number_one
+This is the first function speaking...
+This is now the second function speaking...
+
+
+
+unset -f function_name          # tremove the definition of a function from the shell
+
