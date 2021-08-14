@@ -12,3 +12,30 @@ The delimiter tells the shell that the here document has completed.
 Without it, the shell continues to read the input forever.
 The delimiter must be a single word that does not contain spaces or tabs.
 
+cat << EOF                                  #
+This is a simple lookup program             #
+for good (and bad) restaurants              #      HERE DOCUMENT EXAMPLE
+in Cape Town.                               #
+EOF	                                        #
+
+
+command > /dev/null       # to discard the output by redirecting it to the file /dev/null 
+command > /dev/null 2>&1  # to discard both output of a command and its error output, use standard redirection to redirect STDERR to STDOUT
+echo message 1>&2         # to display a message on to STDERR by redirecting STDOUT into STDERR
+
+Note : 2 represents STDERR and 1 represents STDOUT
+
+
+REDIRECTION COMMANDS :
+
+pgm > file           # output of pgm is redirected to file
+pgm < file           # program pgm reads its input from file
+pgm >> file          # output of pgm is appended to file
+n > file             # output from stream with descriptor n redirected to file
+n >> file            # output from stream with descriptor n appended to file
+n >& m               # merges output from stream n with stream m
+n <& m               # merges input from stream n with stream m
+<< tag               # standard input comes from here through next tag at the start of line
+|                    # takes output from one program, or process, and sends it to another
+
+Note :   the file descriptor 0 is normally standard input (STDIN), 1 is standard output (STDOUT), and 2 is standard error output (STDERR)
