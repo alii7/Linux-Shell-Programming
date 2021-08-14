@@ -1,0 +1,26 @@
+function_name () {              #
+   list of commands             #     FUNCTION SYNTAX
+}                               #
+
+# Define your function here
+Hello () {
+   echo "Hello World"
+}
+
+# Invoke your function
+Hello
+
+
+
+Function  will accept parameters while calling the function
+These parameters would be represented by $1, $2 and so on.
+
+
+# Define your function here
+Hello () {
+   echo "Hello World $1 $2"
+}
+
+# Invoke your function
+Hello Zara Ali
+
